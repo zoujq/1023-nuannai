@@ -1,31 +1,18 @@
 #include "BS84B08A-3.h"
-#include	"io_init.h"
-#include	"pio.h"
-#include	"display.h"
+#include "io_init.h"
+#include "pio.h"
+#include "display.h"
 
 void	display(void);
 void	clr_display(void);
 void	display_bit(void);
 void	disp_pre_1(void);
 
-
-
-
-
-void	display(void)
+void display(void)
 {
-
 	bit	disp_t_flag;
-	
-
-
-
 	uchar	i;
-	_clrwdt();
-	
-
-
-		
+	_clrwdt();		
 	if(work_mode==0)
 	{
 		if(work_off_5min>=5)
@@ -35,9 +22,7 @@ void	display(void)
 		}
 	}
 	else
-	{
-
-			
+	{			
 		if(work_mode==3)//温度
 		{
 			sw_temp=set_temp_data_1;
@@ -139,7 +124,6 @@ void	display(void)
 		}
 
 	}
-	
 	
 	if(init_time==0)
 	{
