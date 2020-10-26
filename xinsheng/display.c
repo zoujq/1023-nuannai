@@ -38,7 +38,7 @@ void	display(void)
 	{
 
 			
-		if(work_mode==3)//ÎÂ¶È
+		if(work_mode==3)//æ¸©åº¦
 		{
 			sw_temp=set_temp_data_1;
 			if(sw_temp>=100)
@@ -90,7 +90,7 @@ void	display(void)
 		//	display_4_data=0x0f;
 			disp_dp_flag=0;			
 			
-			if((kong_flag==0)||(set_delay>0))//ÎÂ¿Ø¶Ï¿ª
+			if((kong_flag==0)||(set_delay>0))//æ¸©æŽ§æ–­å¼€
 			{
 				display_1_data=_no;
 				display_2_data=_no;
@@ -158,19 +158,19 @@ void	display(void)
 	//display_temp1=display_table[display_1_data];
 	display_temp1=0;	
 	if(display_1_data!=_no)display_temp1|=0b00110000;
-	if(work_mode==1)display_temp1|=0b00000001;//¿ìËÙ¼ÓÈÈ
+	if(work_mode==1)display_temp1|=0b00000001;//å¿«é€ŸåŠ çƒ­
 	if(work_mode==3)
 	{
-		display_temp1|=0b10000000;//ºãÎÂ
+		display_temp1|=0b10000000;//æ’æ¸©
 	//	display_temp1|=0b01000000;
 	}
 	if(work_mode==2)
 	{
-		display_temp1|=0b00001000;//Ïû¶¾
+		display_temp1|=0b00001000;//æ¶ˆæ¯’
 	}
 	if(time_500ms_flag==0)
 	{
-		if((kong_flag==0)||(set_delay>0))//ÎÂ¿Ø¶Ï¿ª
+		if((kong_flag==0)||(set_delay>0))//æ¸©æŽ§æ–­å¼€
 		{
 			display_temp1=0;
 		}
@@ -222,7 +222,7 @@ void	clr_display(void)
 	m_led_com_3=0;
 	m_led_com_4=0;
 	m_led_a=0;
-	m_led_b=0;
+	m_led_b=0;  
 	m_led_c=0;
 	m_led_d=0;
 	m_led_e=0;

@@ -142,7 +142,7 @@
 #define NUM_C	(SEGA|SEGF|SEGG|SEGH)
 #define NUM_U	(SEGC|SEGD|SEGE)
 #define NUM_N	(SEGC|SEGE|SEGG)
-#define NUM_R	(SEGE|SEGG)	
+#define NUM_R	(SEGE|SEGG)
 #define NUM_ALL	(SEGA|SEGB|SEGC|SEGD|SEGE|SEGF|SEGG|SEGH)
 
 #pragma rambank0
